@@ -3,7 +3,7 @@ class College:
     def __init__(self):
         self.menu()
 
-    def menu(self):
+   def menu(self):
         while True:
             choice = int(input("""
 1. Press 1 to visit college campus
@@ -17,23 +17,23 @@ class College:
 Enter your choice: 
 """))
 
-            if choice == 1:
-                self.visit_college_campus()
-            elif choice == 2:
-                self.take_admission()
-            elif choice == 3:
-                self.library()
-            elif choice == 4:
-                self.check_packages()
-            elif choice == 5:
-                self.course_branch()
-            elif choice == 6:
-                self.study_resources()
-            elif choice == 7:
-                self.remove_admission()
-            else:
-                print("Thank you! Exiting...")
-                break
+   if choice == 1:
+       self.visit_college_campus()
+   elif choice == 2:
+       self.take_admission()
+   elif choice == 3:
+       self.library()
+   elif choice == 4:
+       self.check_packages()
+   elif choice == 5:
+       self.course_branch()
+   elif choice == 6:
+       self.study_resources()
+   elif choice == 7:
+       self.remove_admission()
+   else:
+       print("Thank you! Exiting...")
+       break
 
     def visit_college_campus(self):
         print("""
